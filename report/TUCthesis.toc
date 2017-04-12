@@ -96,8 +96,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}A Practical Overview of heterogeneity for Energy Efficiency}{53}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix}}{55}{appendix.A}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Conclusions/Discussions}}{55}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Installation of TinyOS on MacOSX}{55}{section.A.1}
+\contentsline {section}{\numberline {6.1}Summary of Results}{55}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Installation of TinyOS on UBUNTU}{55}{section.A.2}
+\contentsline {section}{\numberline {6.2}Recommendations for Further Research}{55}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Appendix}}{59}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Installation of TinyOS on MacOSX}{59}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Installation of TinyOS on UBUNTU}{59}{section.A.2}
