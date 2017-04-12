@@ -10,25 +10,23 @@
 
 \begin{otherlanguage}{american}
 \chapter*{Abstract}
-Short summary of the contents in English\dots 
+The aim of this research project is to evaluate a heterogeneous design of a \ac{WSN}. From the adjective \textit{heterogeneous}, we intend to point out that the \acp{SN} participating in the proposed \ac{WSN} are dissimilar in terms of energy availability and computational capabilities.   
 
-A great guide by Kent Beck how to write good abstracts can be found at:  
-\begin{center}
-\url{https://plg.uwaterloo.ca/~migod/research/beckOOPSLA.html}
-\end{center}
-It is particularly important to only use the language that has been specified in its surrounding \texttt{otherlanguage} block to cater to proper hyphenation.
+\par
+The research work is divided in two parts: first part of the research work involves studying and implementing packet routing to the base station (or sink) via \ac{CTP} in TinyOS. The later part focuses on designing and evaluating a heterogeneous \ac{WSN} architecture on top of \ac{CTP}.
 
+\par
+
+Th results of the simulation(Cooja simulator for TinyOS) and test-bed evaluations show the benefits of a heterogeneous design in terms of reduced Energy consumption and lowered data traffic by having the data processed by a neighbouring (one-hop or two-hop) heterogeneous data processing \ac{SN}. 
+
+\par
+In conclusion, the research work argues that the energy budget and compute power of a \ac{WSN} can be increased by deploying a bunch of heterogeneous \acp{SN} in vicinity. This can be highly advantageous in situations where: a \ac{SN} in distant location from \ac{BS} has to send packets all the way through the tree of adjacent \acp{SN}. To take maximum benefit of the heterogeneous \ac{SN}, we have also provided measures to determine the optimum location to place a heterogeneous \ac{SN} in the \ac{WSN}.
+
+
+\par
+From technical point of view the research work can also be seen as studying and implementing an important aspect of \ac{WSN}, the hybridization of several technologies: networking, data collection, heterogeneity,  \acp{SN} communication and routing. Moreover, \acp{SN} in a \ac{WSN}, need a cost-effective and fair communication channel access arbitration. Therefore, selection and implementation of efficient Routing protocols, implemented at Network layer, is necessary for efficient routing of traffic after the topological set up has been done. Additionally, coherent layer2 and layer3 protocols are needed to test a working model of heterogeneous \ac{WSN}.
 \end{otherlanguage}
 
-\vfill
-
-\begin{otherlanguage}{ngerman}
-\pdfbookmark[1]{Zusammenfassung}{Zusammenfassung}
-\chapter*{Zusammenfassung}
-Hier eine kurze Zusammenfassung des Inhaltes in deutscher Sprache\dots 
-Sollten Sie die Thesis auf Englisch schreiben, ist dennoch eine deutsche Zusammenfassung notwendig.
-Im umgekehrten Fall kann die englische Zusammenfassung durch Auskommentieren weggelassen werden.
-\end{otherlanguage}
 
 \endgroup			
 
