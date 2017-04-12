@@ -1,0 +1,92 @@
+% !TEX root = ../TUCthesis.tex
+%*****************************************
+\chapter{Getting started}\label{ch:examples}
+%*****************************************
+
+As follows, some rules by the authors of \texttt{classicthesis}.
+
+\section{Style Recommendations}
+
+\begin{itemize}
+    \item No bold fonts are used. Italics or spaced small caps do the
+    job quite well. To use them, enclose your text in \textbackslash emph\{xyz\} or
+    \textbackslash spacedlowsmallcaps\{text\} or \textbackslash spacedallcaps\{abc\}.
+    \item The tables intentionally do not use vertical or double
+    rules. See the documentation for the \texttt{booktabs} package for
+    a nice discussion of this topic.\footnote{To be found online at 
+    \url{http://mirror.ctan.org/macros/latex/contrib/booktabs/}.}
+    A sample table is shown in \autoref{tab:booktabstest} on page\ \pageref{tab:booktabstest}.
+\end{itemize}
+
+\begin{table}[t] % t = top, also oben auf der Seite platzieren
+
+\caption{Tolle Tabelle. Sie hat keine Unter-, sondern eine Überschrift!} 
+% dies muss immer vor \begin{tabular} stehen, damit es auch eine Überschrift bleibt!
+
+\myfloatalign % zentrieren
+\begin{tabular}{cccp{3cm}} % keine vertikalen Linien (d.h. kein | verwenden)
+\toprule
+\tableheadline{Jahr} & \tableheadline{Monat} & \tableheadline{Tag} & \tableheadline{Ereignis} \\
+\midrule
+2016 & Juni & 1 & Erstellung dieser Formatvorlage \\
+\bottomrule
+\end{tabular}
+\label{tab:booktabstest} % auf dieses Laben mit \autoref{} verweisen, muss nach dem \end{tabular} stehen
+\end{table}
+
+Graphics files can be easily included like the one shown in \autoref{fig:tucseal}.
+
+\begin{figure}[h]
+\myfloatalign
+\includegraphics[width=0.3\textwidth]{gfx/TUC-seal.pdf}
+\caption{Seal of TU Clausthal}
+\label{fig:tucseal}
+\end{figure}
+
+
+\section{Organization}
+A very important factor for successful thesis writing is the
+organization of the material. This version modified for use at TU Clausthal  
+suggests a structure as follows:
+\begin{itemize}
+    \item\texttt{sections/} is where all the ``real'' content goes in
+    separate files. Naming is free; you can either enumerate them, such as \texttt{section01.tex}, or
+    give your sections descriptive names like \texttt{introdution.tex}. In order to include
+    a new section in the document, it must be added in the main matter part of \texttt{TUCthesis.tex}
+    by including it (see existing include commands for other sections for reference).
+
+    \item\texttt{FrontBackMatter/} is where all the stuff goes that
+    surrounds the ``real'' content, such as the acknowledgments,
+    cover page layout, etc.
+    
+    \item\texttt{gfx/} is where you put all the graphics you use in
+    the thesis. Maybe they should be organized into subfolders
+    depending on the chapter they are used in, if you have a lot of
+    graphics.
+    
+    \item\texttt{Bibliography.bib}: the Bib\TeX\ database to organize
+    all the references you might want to cite.
+    
+    \item\texttt{classicthesis.sty}: the style definition to get this
+    awesome look and feel. 
+    
+    \item\texttt{TUCthesis.tex}: the main file of your thesis
+    where all gets bundled together.
+    
+    \item\texttt{thesis-config.tex}: a central place to load all 
+    nifty packages that are used. You also adjust the title of your thesis, 
+    your name, and all  similar information here. 
+    
+\end{itemize}
+
+
+\section{Code listings}
+
+\begin{lstlisting}[float=h,language=Java,frame=tb,caption={Beispielcode},label=lst:example]
+int j=1;
+for (int i=1; i<24; i++) {
+  j = j * i;
+}
+\end{lstlisting}
+
+The code is shown in \autoref{lst:example}
