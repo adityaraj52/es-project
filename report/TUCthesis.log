@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.16)  12 APR 2017 23:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.16)  12 APR 2017 23:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2302,9 +2302,10 @@ s-converted-to.pdf tuclogo/Logo_TUC_de_RGB.eps>
 (epstopdf)             \includegraphics on input line 9.
 Package epstopdf Info: Output file is already uptodate.
 
-<tuclogo/Logo_TUC_de_RGB-eps-converted-to.pdf, id=91, 368.37625pt x 69.25874pt>
+<tuclogo/Logo_TUC_de_RGB-eps-converted-to.pdf, id=216, 368.37625pt x 69.25874pt
+>
 File: tuclogo/Logo_TUC_de_RGB-eps-converted-to.pdf Graphic file (type pdf)
-<use tuclogo/Logo_TUC_de_RGB-eps-converted-to.pdf>
+ <use tuclogo/Logo_TUC_de_RGB-eps-converted-to.pdf>
 Package pdftex.def Info: tuclogo/Logo_TUC_de_RGB-eps-converted-to.pdf used on i
 nput line 9.
 (pdftex.def)             Requested size: 336.0pt x 63.17137pt.
@@ -2368,7 +2369,7 @@ go/Logo_TUC_de_RGB-eps-converted-to.pdf>])
 
 (./FrontBackmatter/Declaration.tex)
 Overfull \hbox (28.81052pt too wide) has occurred while \output is active
- \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:44 (\T1/pplj/m/n/8 delet
+ \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:56 (\T1/pplj/m/n/8 delet
 e \T1/fvm/m/n/8 drafting \T1/pplj/m/n/8 option in \T1/fvm/m/n/8 thesis-config.t
 ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ] 
  []
@@ -2396,7 +2397,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 26.
 )
 Overfull \hbox (28.81052pt too wide) has occurred while \output is active
- \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:44 (\T1/pplj/m/n/8 delet
+ \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:56 (\T1/pplj/m/n/8 delet
 e \T1/fvm/m/n/8 drafting \T1/pplj/m/n/8 option in \T1/fvm/m/n/8 thesis-config.t
 ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ] 
  []
@@ -2419,18 +2420,9 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/pplj/b/n' tried instead on input line 17.
-)
-\tf@toc=\write7
-\openout7 = `TUCthesis.toc'.
 
-
-1: section
-1: chapter
-1: chapter
-1: section
-
-Overfull \hbox (28.81052pt too wide) has occurred while \output is active
- \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:44 (\T1/pplj/m/n/8 delet
+Overfull \hbox (28.93588pt too wide) has occurred while \output is active
+ \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:56 (\T1/pplj/m/n/8 delet
 e \T1/fvm/m/n/8 drafting \T1/pplj/m/n/8 option in \T1/fvm/m/n/8 thesis-config.t
 ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ] 
  []
@@ -2439,20 +2431,29 @@ ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ]
 
 
 
-] [8
+])
+\tf@toc=\write7
+\openout7 = `TUCthesis.toc'.
 
 
-]
+1: section
+1: chapter
+1: chapter
+1: section
+[8]
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <9> not available
 (Font)              Font shape `T1/pplj/b/n' tried instead on input line 71.
 )
 Overfull \hbox (28.81052pt too wide) has occurred while \output is active
- \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:44 (\T1/pplj/m/n/8 delet
+ \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:56 (\T1/pplj/m/n/8 delet
 e \T1/fvm/m/n/8 drafting \T1/pplj/m/n/8 option in \T1/fvm/m/n/8 thesis-config.t
 ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ] 
  []
 
-[9] [10
+[9
+
+
+] [10
 
 
 
@@ -2462,7 +2463,7 @@ ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ]
 
 
 Overfull \hbox (28.81052pt too wide) has occurred while \output is active
- \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:44 (\T1/pplj/m/n/8 delet
+ \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:56 (\T1/pplj/m/n/8 delet
 e \T1/fvm/m/n/8 drafting \T1/pplj/m/n/8 option in \T1/fvm/m/n/8 thesis-config.t
 ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ] 
  []
@@ -2475,25 +2476,21 @@ ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ]
 
  (./sections/section01.tex
 chapter 1.
+Package acronym Info: Label `acro:WSN' newly defined as it shall be overridden
+although it is yet undefined on input line 15.
+Package acronym Info: Label `acro:BS' newly defined as it shall be overridden
+although it is yet undefined on input line 15.
 
-LaTeX Warning: Citation 'bringhurst:2002' on page 1 undefined on input line 12.
-
-
-Package acronym Info: Label `acro:UML' newly defined as it shall be overridden
-although it is yet undefined on input line 17.
-
-Overfull \hbox (5.0708pt too wide) in paragraph at lines 23--26
-[]\T1/pplj/m/n/10.95 Starting from the sec-ond para-graph in a sec-tion/chap-te
-r, para-graphs
+Overfull \hbox (0.25435pt too wide) in paragraph at lines 15--16
+\T1/pplj/m/n/10.95 diversity mon-i-tor-ing, mil-i-tary surveil-lance, home au-t
+oma-tion, in-creas-
  []
 
-LaTeX Font Info:    Try loading font information for TS1+pplj on input line 39.
+Package acronym Info: Label `acro:SN' newly defined as it shall be overridden
+although it is yet undefined on input line 18.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1pplj.fd
-File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
-))
 Overfull \hbox (28.81052pt too wide) has occurred while \output is active
- \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:44 (\T1/pplj/m/n/8 delet
+ \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:56 (\T1/pplj/m/n/8 delet
 e \T1/fvm/m/n/8 drafting \T1/pplj/m/n/8 option in \T1/fvm/m/n/8 thesis-config.t
 ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ] 
  []
@@ -2505,320 +2502,66 @@ ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ]
 
 
 ]
-\openout2 = `sections/section02.aux'.
+Package acronym Info: Label `acro:MAC' newly defined as it shall be overridden
+although it is yet undefined on input line 27.
 
- (./sections/section02.tex [2
+Overfull \hbox (0.33688pt too wide) in paragraph at lines 27--28
+[]\T1/pplj/m/n/10.95 Controlled chan-nel ac-cess us-ing [][][]Medium Ac-cess Ac
+on-trol ([])[]
+ []
+
+Package acronym Info: Label `acro:PC' newly defined as it shall be overridden
+although it is yet undefined on input line 45.
+[2]
+Overfull \hbox (4.61024pt too wide) in paragraph at lines 51--52
+[]\T1/pplj/m/n/10.95 Implement het-ero-gene-ity in a sim-pli-fied way by con-ne
+ct-ing some
+ []
+
+Package acronym Info: Label `acro:CTP' newly defined as it shall be overridden
+although it is yet undefined on input line 55.
+
+Overfull \hbox (13.01979pt too wide) in paragraph at lines 55--56
+[]\T1/pplj/m/n/10.95 Demonstrate ben-e-fits of adding het-ero-gene-ity layer ov
+er [][][]Collection
+ []
 
 
-
-
-]
-chapter 2.
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 7.65005pt on input line 17.
-<gfx/TUC-seal.pdf, id=203, 151.56625pt x 170.6375pt>
-File: gfx/TUC-seal.pdf Graphic file (type pdf)
- <use gfx/TUC-seal.pdf>
-Package pdftex.def Info: gfx/TUC-seal.pdf used on input line 41.
-(pdftex.def)             Requested size: 100.80103pt x 113.48552pt.
-
-Overfull \hbox (33.55508pt too wide) in paragraph at lines 52--57
-\T1/pplj/m/n/10.95 Nam-ing is free; you can ei-ther enu-mer-ate them, such as \
-T1/fvm/m/n/10.95 section01.tex\T1/pplj/m/n/10.95 ,
+Overfull \hbox (4.77438pt too wide) in paragraph at lines 75--76
+\T1/pplj/m/n/10.95 Gate Ar-ray (FP-GAs) or Application-specific in-te-grated ci
+r-cuits (ASICs),
  []
 
 
 Overfull \hbox (28.81052pt too wide) has occurred while \output is active
- \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:44 (\T1/pplj/m/n/8 delet
+ \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:56 (\T1/pplj/m/n/8 delet
 e \T1/fvm/m/n/8 drafting \T1/pplj/m/n/8 option in \T1/fvm/m/n/8 thesis-config.t
 ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ] 
  []
 
-[3 <./gfx/TUC-seal.pdf>]
-(/usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
+[3]
+LaTeX Font Info:    Try loading font information for TS1+pplj on input line 81.
+
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1pplj.fd
+File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 )
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 85.
-) [4]
-\openout2 = `sections/section03.aux'.
+
+LaTeX Warning: Citation 'TEP:119' on page 4 undefined on input line 98.
 
 
-(./sections/section03.tex
-chapter 3.
+LaTeX Warning: Citation 'moeller2010routing' on page 4 undefined on input line 
+100.
 
-Overfull \hbox (1.89992pt too wide) in paragraph at lines 5--8
-\T1/pplj/m/n/10.95 Ei choro aeterno an-tiopam mea, labitur bono-rum pri no. His
- no decore
+
+LaTeX Warning: Citation 'Hackmann:2008' on page 4 undefined on input line 100.
+
+
+LaTeX Warning: Citation 'Alizai:2009' on page 4 undefined on input line 100.
+
+
+Overfull \hbox (30.27924pt too wide) in paragraph at lines 100--101
+\T1/pplj/m/n/10.95 signs or new pro-to-col mech-a-nisms [[]], [[]],
  []
 
-
-Overfull \hbox (28.81052pt too wide) has occurred while \output is active
- \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:44 (\T1/pplj/m/n/8 delet
-e \T1/fvm/m/n/8 drafting \T1/pplj/m/n/8 option in \T1/fvm/m/n/8 thesis-config.t
-ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ] 
- []
-
-[5
-
-
-
-
-]) [6]
-\openout2 = `sections/section04.aux'.
-
- (./sections/section04.tex
-chapter 4.
-
-LaTeX Warning: Citation 'superbuch2007' on page 7 undefined on input line 15.
-
-
-Overfull \hbox (10.26967pt too wide) in paragraph at lines 15--16
-[]\T1/pplj/m/n/10.95 ,,Das alles. Und noch viel mehr. Würde ich machen'' [[]]. 
-
- []
-
-
-LaTeX Warning: Citation 'reinhardt12tracebase' on page 7 undefined on input lin
-e 21.
-
-
-LaTeX Warning: Citation 'englert13highresolution' on page 7 undefined on input 
-line 21.
-
-
-LaTeX Warning: Citation 'reinhardt12distributed' on page 7 undefined on input l
-ine 21.
-
-
-LaTeX Warning: Citation 'reinhardt11smartmeterkom' on page 7 undefined on input
- line 21.
-
-
-Overfull \hbox (33.58391pt too wide) in paragraph at lines 21--22
-[]\T1/pplj/m/n/10.95 Empfehlenswert sind auch die weit-eren Ar-beiten in [[],
- []
-
-
-Overfull \hbox (50.0463pt too wide) in paragraph at lines 21--22
-[]\T1/pplj/m/n/10.95 , [], []]. 
- []
-
-
-LaTeX Warning: Citation 'bentley:1999' on page 7 undefined on input line 23.
-
-
-LaTeX Warning: Citation 'bringhurst:2002' on page 7 undefined on input line 23.
-
-
-
-LaTeX Warning: Citation 'cormen:2001' on page 7 undefined on input line 23.
-
-
-LaTeX Warning: Citation 'dueck:trio' on page 7 undefined on input line 23.
-
-
-LaTeX Warning: Citation 'knuth:1976' on page 7 undefined on input line 23.
-
-
-LaTeX Warning: Citation 'knuth:1974' on page 7 undefined on input line 23.
-
-
-LaTeX Warning: Citation 'sommerville:1992' on page 7 undefined on input line 23
-.
-
-
-LaTeX Warning: Citation 'taleb:2012' on page 7 undefined on input line 23.
-
-)
-Overfull \hbox (0.13171pt too wide) in paragraph at lines 23--90
-[]\T1/pplj/m/n/10.95 Und damit das Lit-er-aturverze-ich-nis auch mal 2 Seiten u
-m-fasst noch
- []
-
-
-Overfull \hbox (39.90019pt too wide) in paragraph at lines 23--90
-\T1/pplj/m/n/10.95 ein paar [[], [], [], [], [],
- []
-
-
-Overfull \hbox (28.81052pt too wide) has occurred while \output is active
- \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:44 (\T1/pplj/m/n/8 delet
-e \T1/fvm/m/n/8 drafting \T1/pplj/m/n/8 option in \T1/fvm/m/n/8 thesis-config.t
-ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ] 
- []
-
-[7
-
-
-
-
-]
-\openout2 = `sections/section05.aux'.
-
- (./sections/section05.tex [8
-
-
-
-
-]
-chapter 5.
-
-Overfull \hbox (0.39906pt too wide) in paragraph at lines 7--7
-\T1/pplj/m/n/10.95 Nulla ul-lam-cor-per vestibu-lum turpis. Pel-len-tesque cur-
-sus luc-tus mau-
- []
-
-
-Overfull \hbox (28.81052pt too wide) has occurred while \output is active
- \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:44 (\T1/pplj/m/n/8 delet
-e \T1/fvm/m/n/8 drafting \T1/pplj/m/n/8 option in \T1/fvm/m/n/8 thesis-config.t
-ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ] 
- []
-
-[9]
-Overfull \hbox (3.01057pt too wide) in paragraph at lines 7--7
-[]\T1/pplj/m/n/10.95 Fusce mau-ris. Vestibu-lum luc-tus nibh at lec-tus. Sed bi
-ben-dum, nulla
- []
-
-
-Overfull \hbox (1.76855pt too wide) in paragraph at lines 7--7
-\T1/pplj/m/n/10.95 nec com-modo wisi enim eget quam. Quisque libero justo, con-
-sectetuer
- []
-
-[10]
-Overfull \hbox (9.6941pt too wide) in paragraph at lines 7--7
-\T1/pplj/m/n/10.95 Vestibu-lum diam eros, fringilla et, con-sectetuer eu, non-u
-mmy id, sapien.
- []
-
-
-Overfull \hbox (1.97018pt too wide) in paragraph at lines 7--7
-\T1/pplj/m/n/10.95 nulla. Vestibu-lum rhon-cus mo-lestie odio. Sed lobor-tis, j
-usto et pretium
- []
-
-
-Overfull \hbox (28.81052pt too wide) has occurred while \output is active
- \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:44 (\T1/pplj/m/n/8 delet
-e \T1/fvm/m/n/8 drafting \T1/pplj/m/n/8 option in \T1/fvm/m/n/8 thesis-config.t
-ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ] 
- []
-
-[11]
-Overfull \hbox (16.78175pt too wide) in paragraph at lines 7--7
-\T1/pplj/m/n/10.95 viverra ali-quam risus. Nul-lam pede justo, mo-lestie non-um
-my, scelerisque
- []
-
-[12]
-Overfull \hbox (28.81052pt too wide) has occurred while \output is active
- \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:44 (\T1/pplj/m/n/8 delet
-e \T1/fvm/m/n/8 drafting \T1/pplj/m/n/8 option in \T1/fvm/m/n/8 thesis-config.t
-ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ] 
- []
-
-[13] [14]
-Overfull \hbox (4.95882pt too wide) in paragraph at lines 7--7
-\T1/pplj/m/n/10.95 sent sol-lic-i-tudin vulpu-tate dui. Prae-sent ia-c-ulis viv
-erra au-gue. Quisque
- []
-
-)
-Overfull \hbox (28.81052pt too wide) has occurred while \output is active
- \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:44 (\T1/pplj/m/n/8 delet
-e \T1/fvm/m/n/8 drafting \T1/pplj/m/n/8 option in \T1/fvm/m/n/8 thesis-config.t
-ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ] 
- []
-
-[15] [16
-
-
-
-]
-
-LaTeX Warning: Empty bibliography on input line 98.
-
-\openout2 = `sections/appendix.aux'.
-
-(./sections/appendix.tex
-chapter A.
-
-Overfull \hbox (1.02399pt too wide) in paragraph at lines 9--14
-\T1/pplj/m/n/10.95 clu-daturque. Al-bu-cius ap-pel-lan-tur de-ter-ruis-set id e
-am, viven-dum par-
- []
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-))
-Overfull \hbox (28.81052pt too wide) has occurred while \output is active
- \T1/pplj/m/n/9 [draft created on April 12, 2017 at 23:44 (\T1/pplj/m/n/8 delet
-e \T1/fvm/m/n/8 drafting \T1/pplj/m/n/8 option in \T1/fvm/m/n/8 thesis-config.t
-ex \T1/pplj/m/n/8 to remove this line) \T1/pplj/m/n/9 ] 
- []
-
-[17
-
-
-
-
-
-] [18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
- (./TUCthesis.aux (./FrontBackmatter/Titlepage.aux)
-(./FrontBackmatter/Titleback.aux) (./FrontBackmatter/Declaration.aux)
-(./FrontBackmatter/Abstract.aux) (./FrontBackmatter/Contents.aux)
-(./sections/section01.aux) (./sections/section02.aux) (./sections/section03.aux
-) (./sections/section04.aux) (./sections/section05.aux)
-(./sections/appendix.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
-Package rerunfilecheck Info: File `TUCthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 1E2364A78F45E026726D520103B99D62;1309.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                TUCthesis
-(biblatex)                and rerun LaTeX afterwards.
-
-Package logreq Info: Writing requests to 'TUCthesis.run.xml'.
-\openout1 = `TUCthesis.run.xml'.
-
- ) 
-Here is how much of TeX's memory you used:
- 42915 strings out of 493014
- 825747 string characters out of 6133351
- 1432409 words of memory out of 5000000
- 45527 multiletter control sequences out of 15000+600000
- 101222 words of font info for 156 fonts, out of 8000000 for 9000
- 1147 hyphenation exceptions out of 8191
- 89i,22n,90p,10504b,3298s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/l
-ocal/texlive/2016/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2016/texmf-dist/fo
-nts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
-e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
-palatino/uplri8a.pfb>
-Output written on TUCthesis.pdf (30 pages, 191630 bytes).
-PDF statistics:
- 390 PDF objects out of 1000 (max. 8388607)
- 334 compressed objects within 4 object streams
- 88 named destinations out of 1000 (max. 500000)
- 25791 words of extra memory for PDF output out of 29859 (max. 10000000)
+[4]
 

@@ -1,103 +1,34 @@
 % !TEX root = ../TUCthesis.tex
+
 %************************************************
-\chapter{Math Test Chapter}\label{ch:mathtest} % $\mathbb{ZNR}$
+\chapter{Literature Review}\label{ch:literature}
 %************************************************
-Ei choro aeterno antiopam mea, labitur bonorum pri no. His no decore
-nemore graecis. In eos meis nominavi, liber soluta vim cu. Sea commune
-suavitate interpretaris eu, vix eu libris efficiantur.
 
-\section{Some Formulas}
-Due to the statistical nature of ionisation energy loss, large
-fluctuations can occur in the amount of energy deposited by a particle
-traversing an absorber element\footnote{Examples taken from Walter
-Schmidt's great gallery: \\
-\url{http://home.vrweb.de/~was/mathfonts.html}}.  Continuous processes
-such as multiple
-scattering and energy loss play a relevant role in the longitudinal
-and lateral development of electromagnetic and hadronic
-showers, and in the case of sampling calorimeters the
-measured resolution can be significantly affected by such fluctuations
-in their active layers.  The description of ionisation fluctuations is
-characterised by the significance parameter $\kappa$, which is
-proportional to the ratio of mean energy loss to the maximum allowed
-energy transfer in a single collision with an atomic electron:
-\begin{equation}
-\kappa =\frac{\xi}{E_{\textrm{max}}} %\mathbb{ZNR}
-\end{equation}
-$E_{\textrm{max}}$ is the maximum transferable energy in a single
-collision with an atomic electron.
-\[
-E_{\textrm{max}} =\frac{2 m_{\textrm{e}} \beta^2\gamma^2 }{1 +
-2\gamma m_{\textrm{e}}/m_{\textrm{x}} + \left ( m_{\textrm{e}}
-/m_{\textrm{x}}\right)^2}\ ,
-\]
-where $\gamma = E/m_{\textrm{x}}$, $E$ is energy and
-$m_{\textrm{x}}$ the mass of the incident particle,
-$\beta^2 = 1 - 1/\gamma^2$ and $m_{\textrm{e}}$ is the electron mass.
-$\xi$ comes from the Rutherford scattering cross section
-and is defined as:
-\begin{eqnarray*} \xi  = \frac{2\pi z^2 e^4 N_{\textrm{Av}} Z \rho
-\delta x}{m_{\textrm{e}} \beta^2 c^2 A} =  153.4 \frac{z^2}{\beta^2}
-\frac{Z}{A}
-  \rho \delta x \quad\textrm{keV},
-\end{eqnarray*}
-where
+Several works have been proposed in the direction of extending resource power and achieving higher average energy budget of the sensor nodes across the \ac{SN}. Most of the solutions are scenario specific and do not give good results under altered conditions and assumptions. Pottie and Kaiser \cite{pottie2000wireless} in their paper have stated that transmissions of about 100 metres range is equivalent to 3000 instructions. Therefore, we need protocols for data aggregation or local processing to minimise energy expenses in performing long range transmissions. Local processing of data can be based on two approaches: cluster based mechanism or addition of heterogeneous processing nodes in the network. In this section we will review the existing protocols in these fields and motivate our research work.
 
-\begin{tabular}{ll}
-$z$          & charge of the incident particle \\
-$N_{\textrm{Av}}$     & Avogadro's number \\
-$Z$          & atomic number of the material \\
-$A$          & atomic weight of the material \\
-$\rho$       & density \\
-$ \delta x$  & thickness of the material \\
-\end{tabular}
+%************************************************
+\section{Cluster-based}
+%************************************************
 
-$\kappa$ measures the contribution of the collisions with energy
-transfer close to $E_{\textrm{max}}$.  For a given absorber, $\kappa$
-tends
-towards large values if $\delta x$ is large and/or if $\beta$ is
-small.  Likewise, $\kappa$ tends towards zero if $\delta x $ is small
-and/or if $\beta$ approaches $1$.
+The concept of clustering to solve the problem of local data processing requires the selected leaders or cluster heads to cater for the communication and processing overhead. Based on the this concept, the paper LEACH \cite{Heinzelman:2000}, was proposed. Though, this algorithm uses randomized cluster head rotation to address the problem of evenly distributing energy load among sensor nodes, yet there are problems in cluster election and cluster formation phase. Also, there is a elevated energy consumption between cluster heads and \acp{BS} as the cluster heads are required to communicate directly with \ac{BS}. In order to directly communicate with the \ac{BS}, the cluster heads will have to send many packets using their high transmission power. Therefore amount of energy dissipated in performing high power transmission will still be a major concern even if we address the problem of fairly assigning slots to the available senders. Improvements to the cluster based algorithms were proposed. LEACH-C \cite{Heinzelman:2002}, which is one of the proposed improvements to LEACH, improves the cluster formation by using a centralized scheme to distribute cluster heads through out the network. More advanced version of LEACH-C was proposed by Zhao in paper \cite{zhao2004energy}. Their algorithm does not require centralised allocation of cluster heads by \ac{BS} and distributes cluster heads more uniformly across the network. 
 
-The value of $\kappa$ distinguishes two regimes which occur in the
-description of ionisation fluctuations:
+\par
+Projects on hybrid algorithms for clustering like in a paper by Jung \cite{Jung:2009} takes into account several factors like residual energy and distance for adaptive static and dynamic clustering formation for high and low data traffic rates respectively. Many authors like Ye, in the paper EECS \cite{Ye:2005} argue distributed interaction, load-balanced clustering and low-control overhead for data collection. In this mechanism, the larger the distance between cluster head and base station, the smaller member size the cluster head should accommodate to compensate for the penalty of long range transmission. Chain based algorithms like PEGASIS \cite{Lindsey:2002} and CHIRON \cite{Chen:2009} improve the energy efficiency of the network by allowing each node to play the role of head node in turn but still transmission to distant nodes in long chain remains a problem. Since there can be only one node and multiple transmissions are not possible, latency remains an issue for chain-based algorithms. Therefore, it can be concluded that clustering and chaining algorithms can not be used to address the problem significantly.
 
-\begin{enumerate}
-\item A large number of collisions involving the loss of all or most
-  of the incident particle energy during the traversal of an absorber.
+%************************************************
+\section{Heterogeneity}
+%************************************************
 
-  As the total energy transfer is composed of a multitude of small
-  energy losses, we can apply the central limit theorem and describe
-  the fluctuations by a Gaussian distribution.  This case is
-  applicable to non-relativistic particles and is described by the
-  inequality $\kappa > 10 $ (i.e., when the mean energy loss in the
-  absorber is greater than the maximum energy transfer in a single
-  collision).
+Adapting heterogeneity to a routing protocol is another way to approach the problem of local data processing with minimal energy consumption. In the paper authored by Sharma and Mazumdar \cite{Sharma:2005}, the focus is on establishing heterogeneity by using wired connections between certain nodes to reduce the overall energy consumption. However, this idea limits the usability of a network for long-term scenarios. in an another work using the Mica2 motes and stargate devices, Hu et al. \cite{hu2009design} have built a hybrid network for detecting cane toads in northern Australia. They have proposed to build a \ac{WSN} with low-power motes with higher processing capabilities. This again puts a limitation to the idea as this would lead to faster draining up of energy because resources consume energy, even if they are not being used. Therefore, they can not be used for autonomous deployments.
 
-\item Particles traversing thin counters and incident electrons under
-  any conditions.
+Use of mobile agents to carry the code and state information from one device to another has also been studied to address heterogeneity issue. In a paper titled AFME  \cite{muldoon2008agent} and in a similar paper titled: MAPS \cite{Aiello:2011}, authors have explored in the direction of using mobile agents. However, the object-oriented designs of mobile agents are quite slow and extremely difficult to implement.
 
-  The relevant inequalities and distributions are $ 0.01 < \kappa < 10
-  $,
-  Vavilov distribution, and $\kappa < 0.01 $, Landau distribution.
-\end{enumerate}
+To increase the network lifetime, Rhee and et. al. \cite{Rhee:2004}, have proposed the use of functional device heterogeneity. The paper is based on the idea of Endpoints, nodes which can not relay data on behalf of others and rather act only as destination for the communication, and routers, nodes that operate with higher duty cycles as they can relay data on behalf of others. In the paper by Yu \cite{Yu:2007}, researchers have supported the idea of optimizing the number and location of processing nodes, which lies more in the domain of a Mathematical Optimization.
 
+\par
+From the theoretical energy analysis, Reinhardt and et. al. in their paper \cite{reinhardt2013exploiting}, have concluded that heterogeneous \acp{SN} are beneficial to deploy in a network with three major application scenarios: cryptography, compression and high-data rate processing within the \ac{WSN}. From the evaluation, they have come to a conclusion that: "Energy savings can be achieved by deploying processor nodes, as their greater energy consumption is counterbalanced by reduced execution times and less traffic in the network." 
 
-\section{Various Mathematical Examples}
-If $n > 2$, the identity
-\[
-  t[u_1,\dots,u_n] = t\bigl[t[u_1,\dots,u_{n_1}], t[u_2,\dots,u_n]
-  \bigr]
-\]
-defines $t[u_1,\dots,u_n]$ recursively, and it can be shown that the
-alternative definition
-\[
-  t[u_1,\dots,u_n] = t\bigl[t[u_1,u_2],\dots,t[u_{n-1},u_n]\bigr]
-\]
-gives the same result.  
+In a similar work by Reinhardt and et. al. \cite{reinhardt2008designing}, they have argued that platform heterogeneity with task migration concept can save the overall energy budget of a \ac{WSN}. They have reasoned this with task migration concept which can play a part in the \ac{WSN} when the energy demand for transmission of data plus remote processing is less than local processing of data plus estimated energy demand of processing and reception of data. 
 
-%*****************************************
-%*****************************************
-%*****************************************
-%*****************************************
-%*****************************************
+Our paper focuses on abridging the research gap on simplified deployment of heterogeneity in a \ac{WSN} which is based on the idea of energy savings as proposed in paper \cite{reinhardt2013exploiting} by minimising the number of transmissions required to deliver the data to the \ac{BS}. Our aim is to address the drawbacks and limitations of heterogeneity concept and further propose a simplified mechanism to provide the heterogeneity layer as an additional plug in on top of the selected routing protocol. Since heterogeneity layer has to depend on other routing algorithms to get the data delivered to \ac{BS}, we simulate heterogeneity on top of \ac{CTP} algorithm, which is considered robust, reliable and efficient for diverse number of platforms. In the paper \cite{pecho2010simulation}, the authors have concluded that \ac{CTP} is designed for low data rates. Our work on heterogeneity also aims to extend \ac{CTP} for high data transfer rates. therefore, the heterogeneity layer should also be seen as an extension to increase the overall flow of wireless data traffic at minimal energy expenditure. 
+

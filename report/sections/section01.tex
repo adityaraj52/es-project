@@ -1,50 +1,153 @@
 % !TEX root = ../TUCthesis.tex
+
 %************************************************
 \chapter{Introduction}\label{ch:introduction}
 %************************************************
 
-This bundle for \LaTeX\ has two goals:
+%************************************************
+\section{Context}
+
+% Introduction to WSN
+% problems in deploying self sufficient WSN system 
+% What is heterogeneity
+%************************************************
+
+In the past decade, \acp{WSN} have shown tremendous capabilities in several application domains. This has been possible due to advancements in communication technologies and electronics, which has enabled researchers to use tiny sensors at low cost. Being limited in energy and computation power, these devices gather information from surroundings and send it to a central server, also known as \ac{BS}, for processing. Some of the application domains for \ac{WSN} deployment include environmental or bio-diversity monitoring, military surveillance, home automation, increasing agricultural yield by monitoring atmospheric and soil conditions, disaster-assistance and so on.
+
+\par
+These battery operated devices with limited communication range (because of low energy budget) have greater advantage over everlasting energy budget devices, when infrastructural availability may not be possible due to remoteness of a geographical location or poor cost-benefit ratio to set up the whole infrastructure for a limited period of time. A basic requirement to enable such a self-sufficient data routing \ac{WSN} system is to propagate the neighborhood information containing the \ac{SN} identifier among the members of the \ac{WSN}. Using the stored tabular information of the neighborhood, one could deploy gossiping algorithms, where each node randomly selects one of its neighbors for message exchange, or perform best neighbor selection based on several possible metrics. However, with an increase in number of \acp{SN}, the whole system may become collision-prone and therefore the overall throughput of the system can considerably decrease because of frequent message exchange collisions. 
+
+Heterogeneity can mitigate such kind of problems. The concept of introducing heterogeneity in a \ac{WSN} involves deploying dissimilar energy and computational power \acp{SN} in the network. In order to save energy in long range transmissions, the communication range for the heterogeneous \acp{SN} are same for all the sensors in our network model. Implementation of such a protocol is quite similar to setting up a general homogeneous network model. The only difference towards realising heterogeneity is to add an additional layer to the routing protocol. Therefore, the overall set up phase requires all the steps necessary to set up a routing protocol at first place and further realise a heterogeneity layer above it. The general idea for setting up a routing protocol  the following concepts:
+
 \begin{enumerate}
-    \item Provide students with an easy-to-use template for their
-    Bachelor's or Master's (or even Ph.D.) thesis. 
-    \item Provide a classic, high-quality typographic style that is
-    inspired by ``\emph{The Elements of
-    Typographic Style}'' \cite{bringhurst:2002}.
+    \item Routing protocols selection to find a route from source to destination
+    
+    \item Multi-hop networking to transmit data (because of limited communication range \acp{SN} can not communicate to base-station directly)
+    
+    \item Controlled channel access using \ac{MAC} protocols (to determine which \ac{SN} transmits at a given point of time)
+    
+    \item Efficient neighborhood discovery and optimal intermediate \ac{SN} selection for sending out the locally gathered data, will be the foundation for deploying heterogeneity in a \ac{WSN}.
 \end{enumerate}
 
-\bigskip
 
-This package supports acronyms (like \ac{UML}) which are defined in \texttt{Contents.tex}.
-On the second use of the acronym (i.e., \ac{UML} again), it will be replaced by the short form.
-If you deliberately need it spelled out, use \acl{UML} or \acf{UML}, respectively.
+%************************************************
+\section{Problem Statement}
 
-\bigskip
+% Identifying the research gap %
+%************************************************
 
-Starting from the second paragraph in a section/chapter, paragraphs are always indented.
-You can avoid this by prefixed them with the \texttt{\textbackslash noindent} keyword.
-If you want all paragraphs to be indented, configure this in \texttt{thesis-config.tex}.
+Generally, we deploy \acp{SN} for \textit{Event Detection} or \textit{Spatial Process Estimation} scenarios.  In a \acf{WSN}, for small data traffic or low processing complexity, communication and local computation, in any of the above mentioned deployment scenarios, is not a big concern. Problem arises when there is a need to do large amount of data processing operations such as continuous audio/video stream processing, or perform high computation tasks, like Fourier transform of input signal. Therefore, as the amount of data grows or the computational complexity increases, feasible and efficient options other than local aggregation and computation are preferred. An easier solution to this would be to increase the data processing capabilities and energy restrictions for all of the deployed homogeneous \acp{SN}. However, increasing the computation power for each of the device in the network will quickly exhaust the total energy budget of the network. Therefore such a protocol is hard to realise in remote locations where eminent power supply is not possible. 
 
-\bigskip
+\par
+Thus to accommodate the design goal of minimal energy consumption and higher computational challenges for low power \acp{SN}, efficient data collection and information processing protocols are required. We here argue that in order to optimise the available resources, intra-network data processing can be deployed.
 
-\noindent If you like the style then its author would appreciate a postcard:
-\begin{center}
- André Miede \\
- Detmolder Straße 32 \\
- 31737 Rinteln \\
- Germany
-\end{center}
+\par 
+We propose to explore the possibility of getting the data processed by a nearby \ac{SN} with higher computation power and eminent energy backup. We believe that heterogeneity could play a role in this direction, by pulling away the load of large amount of data processing locally, by low power nodes, and instead agree to do the task utilizing it’s own, much higher compute power. We will interchangeably refer these higher energy budget and higher computational power heterogeneous \acp{SN} with \acp{PC}.
 
-You can itemize lists like this:
-\begin{itemize}
-\item \emph{For example} and \emph{that is} are prefixed and suffixed by a comma, i.e., like this. 
-\item Of course this does not apply when starting a sentence. E.g., this is a valid sentence, too.
-\end{itemize}
+The problems we wish to address with this research project are summarised below:
 
-\section{Struktur der Arbeit}
-Diese Arbeit ist wie folgt strukturiert.
-In \autoref{ch:introduction} gibt es eine Einleitung.
-In \autoref{ch:examples} eine Anleitung zu \emph{Getting started}.
-Folgend in \autoref{ch:mathtest} ein paar mathematische Beispiele.
-Eine Zusammenfassung mit Ausblick findet sich in \autoref{ch:conclusions}.
+\begin{enumerate}
+    
+    \item Implement heterogeneity in a simplified way by connecting some of the wireless nodes to a more powerful device over usb serial connection.
+    
+    \item Allow heterogeneity implementation as a plugin to general routing protocols.
+    
+    \item Demonstrate benefits of adding heterogeneity layer over \acp{CTP}.
+    
+    \item Evaluate reliability, efficiency, robustness and end to end delivery ratio of a \acp{WSN} comprising of heterogeneous \acp{SN}.
+    
+\end{enumerate}
+
+%************************************************
+\section{Motivation}
+%************************************************
+
+    %************************************************
+    \subsection*{Motivation for the project}
+    %************************************************
+    
+    Wireless \acp{SN} have gained a great amount of attention in recent years. The most suitable reason for their popularity is the ease of deployment in unreachable and unattained areas for sensing and collecting the data from the surrounding and reporting it to the Base Station. Several power-efficient protocols have been proposed in this domain. Energy efficiency is always thought as a major concern while choosing the protocols for a \ac{WSN}. We mostly think in terms of homogeneously working nodes in the sensors neighborhood and further aim to realize the goal of reducing energy-consumption. From an out of box approach, we here explore the possibility of exploiting heterogeneity among \acp{SN} and use it as a leverage to solve the problem of energy consumption and efficient data processing.
+    
+    %************************************************
+    \subsection*{Motivation for using the Platforms: \textit{Telosb and TinyOS}}
+    %************************************************
+    
+    For research purposes, it is not a good idea to use application specific devices like Digital Signal Processors (DSPs), Field-Programmable Gate Array (FPGAs) or Application-specific integrated circuits (ASICs), which will lead to better computational efficiency, but reduced flexibility in terms of re-programmability and/or energy consumption. 
+    \par
+    Therefore, to address the challenge of large computation and low-energy budget, we decide to experiment with Telosb devices and use Tiny Operating System(TinyOS), for the research purpose.
+    Telosb device is widely chosen by research community as it not only allows re-programmability but also can be operated on low power supply (2 Batteries of 1.5V each). Adding extra compute power in a \acf{WSN}, can be realized in two ways:
+    
+    \begin{itemize}
+    	\item Buying a new device with high compute power and using this as a heterogeneous \ac{SN} placed across the network.
+    	
+    	\item Using the same Telosb device and attaching it to Raspberry Pi device, which adds extra compute power to the \ac{SN}. We here also assume that heterogeneous nodes have higher energy capacity. However, this is a workaround to the normal practice of using a complete different device as a heterogeneous node.
+    	
+    \end{itemize}
+    
+    First option is not a quite good approach for two reasons: 1. Most of the \acp{SN} that exist today, differ in connectivity or micro-controller architecture. Also, for many of the devices, TinyOS is not supported. 2. Time limitation to test a working communication interface of a Telosb device with completely new device because an entirely different instrument will have dissimilar communication bandwidth and protocol requirement.
+    
+    \par
+    Second option has three major advantages: 1. Communication interfacing with similar devices will not be a problem as they run on same bandwidth and other channel requirements. 2. Raspberry Pi or a serial connection from Telosb with a high compute power device such as desktops can be added as an extension to Telosb easily. 3. The entire focus of the research can be shifted to implement the heterogeneity solution and not re-inventing the wheels for setting up and running the communication link between two different devices.
+    
+    %************************************************
+    \subsection*{Motivation for using \ac{CTP}}
+    %************************************************
+    
+    An important question arises in this context is: Why do we need collection protocols?
+    
+    The authors \cite{TEP:119} have answered it as – \textit{ “Collecting data at a base station is a common requirement of \ac{WSN} applications. The general approach used is to build one or more collection trees, each of which is rooted at a base station. When a node has data which needs to be collected, it sends the data up the tree, and it forwards collection data that other nodes send to it.” }
+    
+    \ac{CTP} has become a de-facto standard in collection routing in \ac{WSN}. It is generally used as a benchmark by researchers to evaluate new designs or new protocol mechanisms \cite{moeller2010routing}, \cite{Hackmann:2008}, \cite{Alizai:2009}.
+    \par
+    Moreover, \ac{CTP} \cite{Gnawali:2013} has been tested on thirteen different testbeds, seven hardware platforms include Telosb, six different link layers and multiple densities and frequencies, and detailed observations of a long-running \ac{WSN} application that uses \ac{CTP}. As claimed by authors, \ac{CTP} has across all testbeds, configurations, and link layers delivered end-to-end delivery ratio ranges from $ 90.5\% to 99.9\% $.
+    
+    Other main reasons why \acp{CTP} is hard to beat as compared to other routing algorithms 
+    are:
+    
+    \begin{enumerate}
+        \item It is largely platform independent.
+        \item It is seen as a benchmark algorithm as it can be used on diverse set of platforms.
+        \item It is robust, reliable and efficient.
+    \end{enumerate}
+
+%************************************************
+\section{Significance of Research}
+%************************************************
+
+We focus on the problem of sending data to one of the available \acp{PC} in two hop neighborhood. We believe that we can provide a new insight  into tackling the problem of large amount of data processing through the heterogeneity concept, which was earlier possible only once the data reaches the \ac{BS}. This will also imply a reduced number of packet transmissions from a \ac{SN} to the \ac{BS} because of the pre-processing of data by a \ac{PC} prior to reaching the \acp{BS}.
+\par
+
+Also, in an unstructured deployment of \acp{SN}, it becomes necessary to achieve the best performance out of the deployed \ac{PC} in one or two hop neighborhood. Therefore, our second aim is to compare our heterogeneity protocol with \acp{CTP} and demonstrate how significantly a network can benefit by adding a heterogeneity layer on top of data collection layer. This will also establish the fact that the heterogeneity network will increase the overall energy budget of the \acp{WSN}.
+
+%************************************************
+\section{Assumptions and Limitations}
+%************************************************
+We assume the following scenario for the research project:
+
+\begin{enumerate}
+	\item All sensors are not homogeneous. They are dissimilar in terms computational power and energy budget.
+	
+	\item \acp{SN} are randomly distributed and are not configured with knowledge of their location.
+	
+	\item \acp{SN} must send wireless queries to surrounding nodes to discover the network.
+	
+	\item Implementation and testing of protocols is done on TinyOS \cite{TinyOS} Operating System. The sensor node device used for testing and deployment is Telosb MSP430 \cite{crossbow:TELOSB}.
+	
+	\item Telosb Devices attached to Raspberry PI will act as heterogeneous sensor nodes in the Wireless Sensor Network. Raspberry PI will provide raised computation power to the low power Telosb device.
+	
+	\item There is very high energy budget for the heterogeneous high compute power devices.
+	
+	\item Sensors have limited sensing and sending range(around 10metres).
+	
+	\item The communication is based on the single-hop and the communication link is symmetric.
+	
+	\item A Collection Protocol runs at back end for sensor data collection at Base Station.
+	
+\end{enumerate}
 
 
+%************************************************
+\section{Structure of the Report}
+%************************************************\
+
+Chapter 2 sets out with a background of the \ac{WSN} structure, application space, describes general programming structure of nesC and TinyOS, and introduces the particularities in networking and routing. It further briefly presents the existing deployment of \ac{CTP}. Chapter 3 presents a brief overview of the related work in the field of local data processing from two approaches: cluster-based data aggregation and heterogeneity. Chapter 4 describes the hardware and software platforms used for the heterogeneity implementation, as well as the design components of the heterogeneity layer. It follows up with routing design and data transfer design of heterogeneity. Finally, we summarise the heterogeneity process with the help of timer flow charts. Chapter 5 evaluates the heterogeneity model using Cooja simulator by running number of the experiments at various heterogeneity data transfer rates. Chapter 6 summarises the results and gives insights for future work.

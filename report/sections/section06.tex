@@ -1,0 +1,117 @@
+% !TEX root = ../TUCthesis.tex
+
+%************************************************
+\chapter{Conclusions/Discussions}\label{ch:conclusions}
+%************************************************
+
+The integration of wireless heterogeneous \acp{SN} in a \ac{WSN} is one of the most important features for future deployment of \ac{WSN}. In this project we have described the design and deployment of a wireless heterogeneous network on top of \acp{CTP}. We have used link estimation information from \acp{CTP} to make our network robust and thus adapt to the changes in the network. A policy-based mechanism has been deployed to monitor changes in the network, update the network with current state of neighbors and with minimal beacon usage, snoop the ongoing transmissions to make better decisions in occupying a free heterogeneous node. We have also compared performance, efficiency and reliability of the heterogeneity data transfer with the \acp{CTP} data transfer. From the experimental evaluations we have demonstrated significant advantages in placing a heterogeneous \acp{SN} in a \acp{WSN}. 
+
+\par
+We believe that with significant advancements in the network protocols and wireless sensor network devices in past decade, the focus of wireless sensor community will shift towards integration of heterogeneity in their protocols to make the network more energy efficient by providing data processing opportunity by a nearby \ac{SN}. This work has the potential to revolutionize the field of \acp{WSN}, by unifying heterogeneity with collection protocol and finally achieving highly enhanced data transmission capacity.
+
+
+%************************************************
+\section{Summary of Results}
+%************************************************
+
+Using heterogeneity layer over \ac{CTP} has demonstrated significant advantages experimentally. This is confirmed in the table \ref{tab:ProcessedvsUnprocessedData}. The data shows that we can send approximately seven times more data using heterogeneity to \ac{BS} than the \ac{CTP} layer at lower data transfer rates with around 91 percent reception and at higher data transfer rates we can send around three to four times more data to \acp{BS} with 95 percent packet reception. 
+
+\begin{table}[h]
+\caption{Number of data packets in CTP vs Heterogeneity} % title name of the table
+\centering
+\begin{adjustbox}{max width=\textwidth}
+
+	\begin{tabular}{|c|c|c|} 
+		\midrule
+		Data Transfer Rate (in ms) & Packets received by heterogeneity (in thousands) & Packets received by \ac{CTP} (in thousands) \\
+	    
+	    50 & 50.89 & 7.21 \\
+	    80 & 36.66 & 7.32 \\
+	    100 & 28.18 & 7.60 \\
+	    120 & 23.88 & 7.55 \\
+	    150 & 18.98 & 7.60 \\
+	    180 & 16.97 & 7.60 \\
+	    200 & 15.11 & 7.62 \\
+	    220 & 13.19 & 7.66 \\
+	    230 & 12.90 & 7.64 \\
+	    250 & 13.12 & 7.77 \\
+		\hline
+		\end{tabular}
+\end{adjustbox} 	
+\label{tab:ProcessedvsUnprocessedData}
+\end{table}
+
+
+%************************************************
+\section{Recommendations for Further Research}
+%************************************************
+
+It can be seen from the table \ref{tab:PRRinHeterogeneity} that we are not able to increase \acp{PRR} beyond 96 percent. This motivates us to carry out more experiments to see how heterogeneity works in conjunction with other collection protocols. 
+    
+\begin{table}[h]
+\caption{PRR} % title name of the table
+\centering
+\begin{adjustbox}{max width=\textwidth}
+
+	\begin{tabular}{|c|c|} 
+		\midrule
+		Data Transfer Rate (in ms) & \ac{PRR} (in percentage) \\
+	    50 & 91.9 \\
+	    80 & 92.3 \\
+	    100 & 94.4 \\
+	    120 & 94.8 \\
+	    150 & 94.8 \\
+	    180 & 95.6 \\
+	    200 & 95.2 \\
+	    220 & 95.6 \\
+	    230 & 94.8 \\
+	    250 & 95.3 \\
+		\hline
+		\end{tabular}
+\end{adjustbox} 	
+\label{tab:PRRinHeterogeneity}
+\end{table}
+
+This research work has also opened up a large number of topics for further research. Since, we have experimentally verified the concept of heterogeneity using \acp{CTP}, therefore now we need to examine the compatibility of heterogeneity with other network protocols. We also believe that the heterogeneity layer needs to be more generalised to accommodate diversity of application scenarios. From the algorithmic point of view, this protocol needs refinement in terms of allowing more than two hop neighborhood search area and also provide flexibility in selecting a \acp{PC} not only based on the measure of \acp{ETX} values but also other useful \acp{LQI}. 
+
+\par
+Further, we need to mitigate causes for not achieving 100 percent data delivery. Therefore, we need to study the efficiency of retransmission cache in heterogeneity to achieve 100 percent packet reception. We can further work towards reducing the number of beacon exchanges and work out an efficient way to encode more information with minimal beacon exchanges. 
+
+\par
+We further need to examine the possibility of integrating other major design features suggested by other researchers in our protocol. For example, the paper \cite{zhao2004energy} provides an algorithm to find out the optimal cluster heads in a \ac{WSN} without involving the \ac{BS}. We can integrate this in our algorithm to find out which of the nodes in the network are the most suitable contestants for being a \acp{PC}. 
+
+% \begin{enumerate}
+    
+%     \item Design improvements: To let users choose how many hop they want to deep dig to find the processing center
+    
+% \end{enumerate}
+
+
+% \begin{enumerate}
+%     \item 
+    
+%     Can also wait for a while and let the queue fill up to select the CTS request which fits the best among all. So instead of responding to the CTS request the \ac{PC} can wait for a while and respond to the optimum option
+    
+%     More generalisation in terms of interfaces and make it as an extensible parameter to other classes
+    
+%     Optimal code so that the process does not have to o through loops multiple times. Instead store with some kind of mapping tables. 
+    
+    
+%     \item Algorithm improvements: Now there is only a possibility to choose the best neighbour based on ETX. later we can add support for multiple sorting choices like best etx, random chosing, backtracking old data before choosing one like how many times CTS request was rejected.
+    
+    
+%     Adaptive beaconing to adapt to data changes
+    
+%     Tweak parameters to test how the system reacts to changing RREQ or RTS and RREP or CTS mechanism and do not doing them at all.
+    
+%     The sequence number of data packets can help track the lost packets and in certain  scenarios it can be beneficial to track which packets are lost in the course of data transmission. This can further avoid transient routing loops of exponentially flooded packets incase retransmit cache is calle dto send the lost packets. Looping packets must have a modified sequence number say a packet with sequence number 12 can be retarnsmitted again with sequence number 12.1 to keep the receiving nodes aware that this is the first copy of the lost packet.
+    
+%     another possibility to reduce loss is to remove the sensor node participating in heterogenity from \ac{ctp}
+    
+%     see how sending after 2hop data transmission has completed 
+    
+%     reduce the number of beacon exchanges for heterogeneity model
+    
+%     see how the hetergeneity layer behaves with other collection protocols. Given that we replace \ac{ETX} metric with the metric used in the chosen collection protocol
+        
+% \end{enumerate}
