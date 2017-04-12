@@ -1,0 +1,52 @@
+\BOOKMARK [0][]{titlepage.0}{Front page}{}% 1
+\BOOKMARK [1][-]{declaration.1}{Statutory Declaration}{titlepage.0}% 2
+\BOOKMARK [1][-]{Abstract.1}{Abstract}{titlepage.0}% 3
+\BOOKMARK [1][-]{Zusammenfassung.1}{Zusammenfassung}{titlepage.0}% 4
+\BOOKMARK [1][-]{tableofcontents.1}{Contents}{titlepage.0}% 5
+\BOOKMARK [1][-]{acronyms.1}{Acronyms}{titlepage.0}% 6
+\BOOKMARK [0][]{chapter.1}{1 Introduction}{}% 7
+\BOOKMARK [1][-]{section.1.1}{1.1 Context}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.2}{1.2 Problem Statement}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.3}{1.3 Motivation}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.4}{1.4 Significance of Research}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.5}{1.5 Assumptions and Limitations}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.6}{1.6 Structure of the Report}{chapter.1}% 13
+\BOOKMARK [0][]{chapter.2}{2 Background}{}% 14
+\BOOKMARK [1][-]{section.2.1}{2.1 Structure of Wireless Sensor Network}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.2}{2.2 Application Areas}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.3}{2.3 nesC and TinyOS}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.4}{2.4 Route Finding and Selection}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.5}{2.5 Data Collection}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.5.1}{2.5.1 Collection Tree Protocol}{section.2.5}% 20
+\BOOKMARK [2][-]{subsection.2.5.2}{2.5.2 Implementation}{section.2.5}% 21
+\BOOKMARK [0][]{chapter.3}{3 Literature Review}{}% 22
+\BOOKMARK [1][-]{section.3.1}{3.1 Cluster-based}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.2}{3.2 Heterogeneity}{chapter.3}% 24
+\BOOKMARK [0][]{chapter.4}{4 Implementation of Heterogeneous WSN}{}% 25
+\BOOKMARK [1][-]{section.4.1}{4.1 Platforms Used}{chapter.4}% 26
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Hardware Components}{section.4.1}% 27
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Software Components}{section.4.1}% 28
+\BOOKMARK [1][-]{section.4.2}{4.2 Design Components}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Heterogeneity Possibilities}{section.4.2}% 30
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Outline}{section.4.2}% 31
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 TinyOS Components}{section.4.2}% 32
+\BOOKMARK [1][-]{section.4.3}{4.3 Control Plane Design }{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Routing Model}{section.4.3}% 34
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Routing Implementation}{section.4.3}% 35
+\BOOKMARK [1][-]{section.4.4}{4.4 Heterogeneity Specific Implementations}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 Data Structures}{section.4.4}% 37
+\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 Periodic Member Updating}{section.4.4}% 38
+\BOOKMARK [2][-]{subsection.4.4.3}{4.4.3 Periodic Sorting}{section.4.4}% 39
+\BOOKMARK [1][-]{section.4.5}{4.5 Data Plane Design}{chapter.4}% 40
+\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 One-hop Data Transmission}{section.4.5}% 41
+\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2 Two-hop Data Transmission}{section.4.5}% 42
+\BOOKMARK [2][-]{subsection.4.5.3}{4.5.3 Data Processing Phase}{section.4.5}% 43
+\BOOKMARK [1][-]{section.4.6}{4.6 Process Model}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 System Overview}{section.4.6}% 45
+\BOOKMARK [2][-]{subsection.4.6.2}{4.6.2 Timers Flowchart Diagrams}{section.4.6}% 46
+\BOOKMARK [0][]{chapter.5}{5 Evaluation}{}% 47
+\BOOKMARK [1][-]{section.5.1}{5.1 Structure and Analysis of Test Results}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.2}{5.2 A Practical Overview of heterogeneity for Energy Efficiency}{chapter.5}% 49
+\BOOKMARK [0][]{appendix.A}{A Appendix}{}% 50
+\BOOKMARK [1][-]{section.A.1}{A.1 Installation of TinyOS on MacOSX}{appendix.A}% 51
+\BOOKMARK [1][-]{section.A.2}{A.2 Installation of TinyOS on UBUNTU}{appendix.A}% 52
